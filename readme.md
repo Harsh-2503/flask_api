@@ -14,4 +14,6 @@ Done Enjoy!!!
 EC2 route http://34.228.60.214/v1/all-registered-users/
 
 !------ I have also added the api doucmentation as two seperate postman collection
-Use form-data in postman while doing post request ---!
+Use form-data in postman while doing post request 
+and inside Headers Add Authorization Bearer then access token
+---!
