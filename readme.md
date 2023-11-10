@@ -1,5 +1,9 @@
 This is a flask App
 Steps to start the app
+
+!!! DON'T USE THE DOCKER FILE TRIED MY BEST BUT DUE TO SOME REASON DOCKER HOST PORT IS NOT RECOGNIZED WHILE TESTING !!!!
+
+
 My python version 3.9.6
 
 1. Create a Virtual Env
