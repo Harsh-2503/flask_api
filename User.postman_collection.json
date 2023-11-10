@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "700e93eb-9797-4f91-9b7b-de0a9a139199",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24681373"
+	},
+	"item": [
+		{
+			"name": "http://34.228.60.214/v1/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTUwMjM3MCwianRpIjoiMmRlYTliNjgtNWQ5ZS00OGFhLWJmOTYtMWQ0ZDhjZGNmYjllIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImhlbGwyMiIsIm5iZiI6MTY5OTUwMjM3MCwiZXhwIjoxNjk5NTAzMjcwfQ.dGShxD-xhZjKMQxvBC5ONM7agRF8kh1sYaa9eaUcqNg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_name",
+							"value": "harsh200345",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "8961767271",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://34.228.60.214/v1/login/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.228.60.214/v1/signup/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "8961767271",
+							"type": "text"
+						},
+						{
+							"key": "user_name",
+							"value": "harsh200345",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "http://34.228.60.214/v1/signup/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.228.60.214/v1/refresh/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTU4NDI3MSwianRpIjoiMDA3NTBmNzEtYmU2ZS00OTQ5LWJiYmItYzUzOTVmZDYxNTBjIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJoYXJzaDIwMDM0IiwibmJmIjoxNjk5NTg0MjcxLCJleHAiOjE3MDIxNzYyNzF9.5tBXFtG6swvwuYEnBJautfi3Lg4Fkwn0fd1vrIn-S0E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"refresh_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTU0MzA0NiwianRpIjoiMDNjYzkwNTctNTY3OC00Y2Y3LWE4NzEtMGE4MDQ4MThkZTRlIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJoZWxsQCIsIm5iZiI6MTY5OTU0MzA0NiwiZXhwIjoxNzAyMTM1MDQ2fQ.CK0YP_OeLbyFNbS2qhOtcCTKv_TCQmpygH20XRnTdPE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://34.228.60.214/v1/refresh/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.228.60.214/v1/all-registered-users/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTYyNzgzMiwianRpIjoiOGUxNGU2NWYtMTRhMy00NjU4LWE3YzEtNDJlYWNhYmY5MzBkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImhhcnNoMjAwMzQ1IiwibmJmIjoxNjk5NjI3ODMyLCJleHAiOjE2OTk2Mjg3MzJ9.49UFJ4EGN3461KnEAfHrh5ykJ8mWwHv9E4FzQJWxjvw",
+						"type": "text"
+					}
+				],
+				"url": "http://34.228.60.214/v1/all-registered-users/"
+			},
+			"response": []
+		}
+	]
+}

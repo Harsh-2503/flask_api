@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "3543ee32-1279-4337-90be-d130a2d4d29c",
+		"name": "Note",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24681373"
+	},
+	"item": [
+		{
+			"name": "http://34.228.60.214/v1/create-note/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTYxOTU5NiwianRpIjoiZWUyNjlmYTAtMDZhMi00NGVmLWI5YWYtOTliNzljZTYxZWZjIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImhhcnNoMjAwMzQ1IiwibmJmIjoxNjk5NjE5NTk2LCJleHAiOjE2OTk2MjA0OTZ9.NjrtEjn2YKGioSgFEG6RZMGzQ5qO5AbqHEozQcJtASQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "hello",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "gymmy",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://34.228.60.214/v1/create-note/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.228.60.214/v1/get-notes/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTU4NDYxMCwianRpIjoiOWE5MjVkMTMtOGFlMS00MGEyLTgwM2ItNjEzZTJmMTVmMjE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImhhcnNoMjAwMzQiLCJuYmYiOjE2OTk1ODQ2MTAsImV4cCI6MTY5OTU4NTUxMH0.0irkGO7PKG6UD7rJCznasUZsTR16FITzcxyaW-jLGUA",
+						"type": "text"
+					}
+				],
+				"url": "http://34.228.60.214/v1/get-notes/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.228.60.214/v1/update-note/654d009e9791165b35ab83e3/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTU4NDYxMCwianRpIjoiOWE5MjVkMTMtOGFlMS00MGEyLTgwM2ItNjEzZTJmMTVmMjE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImhhcnNoMjAwMzQiLCJuYmYiOjE2OTk1ODQ2MTAsImV4cCI6MTY5OTU4NTUxMH0.0irkGO7PKG6UD7rJCznasUZsTR16FITzcxyaW-jLGUA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "description",
+							"value": "updated note",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://34.228.60.214/v1/update-note/654d009e9791165b35ab83e3/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://34.228.60.214/v1/delete-note/654d9a84280e3ab1ec4e48a4/",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY5OTU4NDYxMCwianRpIjoiOWE5MjVkMTMtOGFlMS00MGEyLTgwM2ItNjEzZTJmMTVmMjE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImhhcnNoMjAwMzQiLCJuYmYiOjE2OTk1ODQ2MTAsImV4cCI6MTY5OTU4NTUxMH0.0irkGO7PKG6UD7rJCznasUZsTR16FITzcxyaW-jLGUA",
+						"type": "text"
+					}
+				],
+				"url": "http://34.228.60.214/v1/delete-note/654d9a84280e3ab1ec4e48a4/"
+			},
+			"response": []
+		}
+	]
+}
