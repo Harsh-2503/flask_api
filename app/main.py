@@ -13,9 +13,11 @@ from app.services.custom_jwt_error_handlers import(
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
 app.config['JWT_SECRET_KEY'] = JWT_SECRET_KEY
-app.config['MONGODB_SETTINGS'] = {
-"host":MONGO_URI
-}
+# app.config['MONGODB_SETTINGS'] = {
+# "host":MONGO_URI
+# }
+
+app.config["MONGODB_HOST"] = MONGO_URI
 jwt = JWTManager(app)
 
 jwt.invalid_token_loader(custom_invalid_token_callback)
